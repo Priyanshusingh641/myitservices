@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+.rounded_custom
+{
+    border-radius: 0 24px 0 24px;
+}
+.rounded_custom_two
+{
+    border-radius: 24px 0px 24px 0px;
+}
+.progress {
+  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  
+  .progress-bar {	
+    border-radius: 4px; 
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  
+  .progress-striped .progress-bar { 	
+    width: 100%; 
+    animation: progressAnimationStrike 15s;
+  }
+  .progress_two {
+  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  
+  .progress-bar_two {	
+    border-radius: 4px; 
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  
+  .progress-striped_two .progress-bar_two { 	
+    width: 100%; 
+    animation: progressAnimationStrike_two 15s;
+  }
+  .progress_three {
+  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  
+  .progress-bar_three {	
+    border-radius: 4px; 
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  
+  .progress-striped_three .progress-bar_three { 	
+    width: 100%; 
+    animation: progressAnimationStrike_three 15s;
+  }
+  @keyframes progressAnimationStrike {
+       from { width: 0 }
+       to   { width: 70% }
+  }
+ @keyframes progressAnimationStrike_two {
+    from { width: 0 }
+    to   { width: 90% }
+}
+@keyframes progressAnimationStrike_three {
+    from { width: 0 }
+    to   { width: 85% }
+}
+
+
+
